@@ -23,7 +23,7 @@
 "Su1-Oh-T3x.text" = "分解能";
 
 /* Class = "UILabel"; text = "Point"; ObjectID = "ZFn-uT-hEO"; */
-"ZFn-uT-hEO.text" = "測定点数";
+"ZFn-uT-hEO.text" = "測定点";
 
 /* Class = "UILabel"; text = "Frequency"; ObjectID = "a7M-ro-9iN"; */
 "a7M-ro-9iN.text" = "周波数";

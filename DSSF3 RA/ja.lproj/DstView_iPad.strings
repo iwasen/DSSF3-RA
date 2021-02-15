@@ -15,7 +15,7 @@
 "Aam-gM-J2I.text" = "-";
 
 /* Class = "UILabel"; text = "Point"; ObjectID = "CV4-7G-YyL"; */
-"CV4-7G-YyL.text" = "測定点数";
+"CV4-7G-YyL.text" = "測定点";
 
 /* Class = "UIButton"; normalTitle = "Averaging"; ObjectID = "DOM-J4-nMt"; */
 "DOM-J4-nMt.normalTitle" = "平均化";
@@ -57,7 +57,7 @@
 "TN1-1Y-NPm.text" = "レベル";
 
 /* Class = "UILabel"; text = "Point"; ObjectID = "XXJ-Ru-GRg"; */
-"XXJ-Ru-GRg.text" = "測定点数";
+"XXJ-Ru-GRg.text" = "測定点";
 
 /* Class = "UILabel"; text = "Hz"; ObjectID = "Ydt-Qd-BwH"; */
 "Ydt-Qd-BwH.text" = "Hz";

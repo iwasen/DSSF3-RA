@@ -97,7 +97,15 @@
 		[self resizeGraphView];
 
 		SetContentSize(self.outletScrollView);
-	}
+    } else {
+        if (g_oSetData.Fft.bShowSettings) {
+            if (_rectGraphView.size.width != self.outletGraphView.frame.size.width || _rectGraphView.size.height != self.outletGraphView.frame.size.height) {
+                _rectGraphView = self.outletGraphView.frame;
+                _sizeGraphView = self.outletGraphView.frame.size;
+                [self createGraphView];
+            }
+        }
+    }
 }
 
 - (void)createGraphView
@@ -169,7 +177,7 @@
 	_rectGraphView = self.outletGraphView.frame;
 
 	if (g_oSetData.Fft.bShowSettings) {
-		self.outletGraphView.frame = _rectGraphView;
+		//self.outletGraphView.frame = _rectGraphView;
 	} else {
 		int topMargin = self.outletOnOff.frame.origin.y + self.outletOnOff.bounds.size.height + 5;
 		self.outletGraphView.frame = CGRectMake(0, topMargin, self.outletBaseView.bounds.size.width, self.outletBaseView.bounds.size.height - topMargin);

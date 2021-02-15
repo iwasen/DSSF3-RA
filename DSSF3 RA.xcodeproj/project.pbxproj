@@ -10,8 +10,6 @@
 		0400548F1E383FE0006D425A /* REC_P.png in Resources */ = {isa = PBXBuildFile; fileRef = 0400548D1E383FE0006D425A /* REC_P.png */; };
 		040054901E383FE0006D425A /* REC_R.png in Resources */ = {isa = PBXBuildFile; fileRef = 0400548E1E383FE0006D425A /* REC_R.png */; };
 		04031481230A6955003C22E5 /* AudioConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04031480230A6955003C22E5 /* AudioConverter.mm */; };
-		0410FBC11E037B9100F3BC4A /* libPCSCL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0410FBC01E037B9100F3BC4A /* libPCSCL.a */; };
-		0410FBC31E037B9500F3BC4A /* libPCSERVE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0410FBC21E037B9500F3BC4A /* libPCSERVE.a */; };
 		0410FBC61E037C3200F3BC4A /* FileIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0410FBC51E037C3200F3BC4A /* FileIO.mm */; };
 		0410FBCD1E038DEA00F3BC4A /* FreqView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0410FBCC1E038DEA00F3BC4A /* FreqView.mm */; };
 		041A021122BCDDB5002AAA42 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041A021322BCDDB5002AAA42 /* Main_iPhone.storyboard */; };
@@ -139,6 +137,8 @@
 		04CF4CBA1E1F732A00404BF8 /* RecView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04CF4CB91E1F732A00404BF8 /* RecView.mm */; };
 		04D8260A1E35CC470033EDCF /* AudioEx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D826091E35CC470033EDCF /* AudioEx.mm */; };
 		04DB5ED61E011B910093A6A4 /* CalibrationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DB5ED51E011B910093A6A4 /* CalibrationViewController.mm */; };
+		04DCC60725CE94D400975826 /* libPCSCL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DCC60625CE94D400975826 /* libPCSCL.a */; };
+		04DCC60925CE94D800975826 /* libPCSERVE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DCC60825CE94D800975826 /* libPCSERVE.a */; };
 		04DD9F612303E8300051A15A /* DocumentBrowserViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04DD9F602303E8300051A15A /* DocumentBrowserViewController.mm */; };
 		04EF5DA122D5DA4D00E615FB /* FreView_iPad.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04EF5D9F22D5DA4D00E615FB /* FreView_iPad.strings */; };
 		04F5BC3322CB374300F3E00E /* FreSubViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04F5BC3222CB374300F3E00E /* FreSubViewController.mm */; };
@@ -378,6 +378,8 @@
 		04D8B87F23066BEB0023A466 /* DSSF3 RA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DSSF3 RA.entitlements"; sourceTree = "<group>"; };
 		04DB5ED41E011B910093A6A4 /* CalibrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalibrationViewController.h; sourceTree = "<group>"; };
 		04DB5ED51E011B910093A6A4 /* CalibrationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CalibrationViewController.mm; sourceTree = "<group>"; };
+		04DCC60625CE94D400975826 /* libPCSCL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPCSCL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DCC60825CE94D800975826 /* libPCSERVE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPCSERVE.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DD9F5F2303E8300051A15A /* DocumentBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentBrowserViewController.h; sourceTree = "<group>"; };
 		04DD9F602303E8300051A15A /* DocumentBrowserViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DocumentBrowserViewController.mm; sourceTree = "<group>"; };
 		04EF5DA022D5DA4D00E615FB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/FreView_iPad.strings; sourceTree = "<group>"; };
@@ -393,10 +395,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0410FBC31E037B9500F3BC4A /* libPCSERVE.a in Frameworks */,
-				0410FBC11E037B9100F3BC4A /* libPCSCL.a in Frameworks */,
 				04B3D0CE1DFAA2E40002F771 /* AVFoundation.framework in Frameworks */,
 				04B3D0CC1DFAA2DF0002F771 /* AudioToolbox.framework in Frameworks */,
+				04DCC60925CE94D800975826 /* libPCSERVE.a in Frameworks */,
+				04DCC60725CE94D400975826 /* libPCSCL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +519,8 @@
 		04B3D0CA1DFAA2DE0002F771 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04DCC60825CE94D800975826 /* libPCSERVE.a */,
+				04DCC60625CE94D400975826 /* libPCSCL.a */,
 				0410FBC21E037B9500F3BC4A /* libPCSERVE.a */,
 				0410FBC01E037B9100F3BC4A /* libPCSCL.a */,
 				04B3D0CD1DFAA2E40002F771 /* AVFoundation.framework */,
@@ -1283,6 +1287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7Z6BAQ463S;
 				GCC_PREFIX_HEADER = "DSSF3 RA/DSSF3-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1294,6 +1299,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.troot.DSSF3.RA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c0550a4c-2e77-4efe-83d8-b31a7fa5c1b2";
@@ -1305,6 +1311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7Z6BAQ463S;
 				GCC_PREFIX_HEADER = "DSSF3 RA/DSSF3-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1316,10 +1323,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.troot.DSSF3.RA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "cc7db577-a169-4f6a-a578-2ca0b6ef9b29";
-				PROVISIONING_PROFILE_SPECIFIER = DSSF3_RA_AdHoc;
+				PROVISIONING_PROFILE_SPECIFIER = DSSF3_RA_AppStore;
 			};
 			name = Release;
 		};

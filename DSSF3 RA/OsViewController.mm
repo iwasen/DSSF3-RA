@@ -230,6 +230,13 @@ static const int tLevelRange[] = {
 		[self setDispMode];
 
 		[self initScreen];
+    } else {
+        if (g_oSetData.Os.bShowSettings) {
+            _rectGraphView = self.outletGraphView.frame;
+            _sizeGraphView = self.outletGraphView.frame.size;
+            [self setDispMode];
+            [self initScreen];
+        }
 	}
 }
 
