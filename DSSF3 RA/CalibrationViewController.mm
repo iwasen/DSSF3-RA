@@ -116,8 +116,6 @@
 	self.outletFreqResponse.enabled = YES;
 	[self dispFreqWindow];
 
-	[AudioInputEx prepare:SAMPLING_RATE :NUM_CHANNELS_1 :WAVEBUF_SAMPLESPERBUFFER :self];
-	[AudioInputEx start];
 
 	_bUpdate = FALSE;
 }
@@ -131,6 +129,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [AudioInputEx prepare:SAMPLING_RATE :NUM_CHANNELS_1 :WAVEBUF_SAMPLESPERBUFFER :self];
+    [AudioInputEx start];
+}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
